@@ -2,89 +2,99 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: hsl(269, 67%, 77%);
   text-align: center;
-}
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  };
 
 /*****************  ESTILOS HEADER *****************/
 
 header {
-  background-color: #ffffff;
+  background-color: hsl(269, 67%, 77%);
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3%;
 }
 
-header img{
-    position: static;
-    top: 10px; left: 10px;
-    height: 80px;
+.navbar-bg{
+  background-color: hsl(269, 67%, 77%);
 }
 
-header h1{
-    position: static;
-    text-align: center;
+.card{
+   width: 10em;
 }
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
 
-  header nav ul li{
-    float: left;
-  }
-
-  header nav ul li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
-  }
-
-  header div{
-    display: inline-block;
-  }
 /*****************  ESTILOS HEADER *****************/
 
+/*****************  ESTILOS MAIN *****************/
 
-  #navbar{
-    color: #0000FF;
-    font-weight: bold;
-  }
 
-  main section img{
-    max-width: 100%;
-    max-height: 100%;
-  }
+/*****************  ESTILOS MAIN *****************/
 
-  main section div h2{
-    text-align: center;
-  }
+/*****************  ESTILOS FOOTER *****************/
 
-  main section div p{
-    text-align: center;
-  }
-
-footer {
-  background-color: #ffffff;
+.footer {
+  background-color: hsl(269, 67%, 77%);
+  color: black;
+  text-align: center;
   padding: 20px 0;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  border-top: 5px
 }
 footer img {
-  height: 50px;
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
 }
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
+
+@media (max-width: 600px) {
+  .footer div a {
+      font-size: 0.875rem; /* Tamaño de texto más pequeño en pantallas pequeñas */
+  }
+
+  .footer img {
+      width: 40px; /* Tamaño de la imagen más pequeño en pantallas pequeñas */
+  }
 }
+
+/*****************  ESTILOS FOOTER *****************/
+
+
+/*****************  ESTILOS CONTACTO.html *****************/
+.parrafo-container{
+  margin-top: 2rem;
+}
+
+.form-container{
+  margin-top: 2rem;
+}
+
+.iframe-container{
+  margin-top: 2rem;
+}
+
+.maps-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.maps-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-nombre{
+  margin: 1%;
+}
+/*****************  ESTILOS CONTACTO.html *****************/
+
+
 .contact a {
   text-decoration: none;
   color: #000;
@@ -96,43 +106,58 @@ footer img {
   padding: unset;
 }
 .banner img {
-  width: unset;
-  height: unset;
-
+  width: -webkit-fill-available;
 }
 
-.gallery, .gallery2 {
+
+/*****************  ESTILOS NOSOTROS.html *****************/
+
+.iframe-video-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin: 20px 0;
-}
-.gallery div, .gallery2 div {
-  width: 100px;
-  height: 100px;
-  background-color: #ccc;
-}
-
-.formulario{
-  text-align: left;
-  margin-left: 10px;
-  background-color: #b7aeae
-}
-.perfil {
-  display: flex;
   align-items: center;
   padding: 20px;
-  background-color: #ffffff;
-  margin: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 5px; 
 }
 
-.perfil img {
-  max-width: 400px;
+.video {
+  flex: 1 1 300px; 
+  max-width: 500px;
+  margin: 10px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px; 
+}
+
+.perfil{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.texto-perfil{
+  flex: 1 1 300px; 
+  max-width: 500px;
+  margin: 10px;
+  text-align: center; 
+}
+
+.imagen-perfil{
+  flex: 1 1 300px; 
+  max-width: 500px; 
+  margin: 10px;
+}
+
+.imagen-perfil img{
+  width: 100%;
   height: auto;
-  margin-right: 20px;
+  border-radius: 10px; 
 }
-.perfil p {
-  flex: 1;
-  margin: 0;
-}
+/*****************  ESTILOS NOSOTROS.html *****************/
