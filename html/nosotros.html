@@ -4,87 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <title>Nosotros</title>
 </head>
 
 <body>
     <!--Header-->
     <header>
-        <div>
-            <img src="../assets/logo.jpeg" alt="Logo de Fotos y Pinceles">
-        </div>
-        <div>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="../index.html">Inico</a></li>
-                    <li><a href="">Nuestros Trabajos</a></li>
-                    <li><a href="">Servicios</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-bg">
+            <div class="container-fluid">
+                <img src="../assets/logo.png" class="card" alt="Logo de Fotos y Pinceles">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <h1>Somos de Fotos y Pinceles</h1>
     </header>
     <!--Header-->
     <main>
-        <!--Para definir/declarar el contenido principal del html-->
-        <section>
-            <div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/8JsceM02TW0?si=aTFk8MXP5hfKQWBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section class="iframe-video-container">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/8JsceM02TW0?si=aTFk8MXP5hfKQWBI" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
         <section>
             <div class="perfil">
-                <img src="../assets/nosotrosProfile.jpg" alt="Foto de Perfil">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corrupti repudiandae esse voluptatibus consequatur et iure illum excepturi id, minima est enim, maxime, non rerum dignissimos expedita labore in vel.</p>
+                <div class="imagen-perfil col-lg-6">
+                    <img src="../assets/nosotrosProfile.jpg" alt="Foto de Perfil">
+                </div>
+                <div class="texto-perfil col-lg-6">
+                    <p>Somos De fotos y pinceles. Nos gusta hacerte feliz dando el mejor servicio de Fotografía, Videos, make-up y más.</p>
+                </div>
             </div>
         </section>
         <section>
             <h2>Hacemos foco en lo que te importa</h2>
-            <div class="gallery">
-                <div>
-                    <img src="../assets/img1.png" alt="Imagen 1">
+            <section class="carousel-cont">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade carousel-dimension">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img1.png" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img2.jpg" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img3.png" class="d-block w-100" alt="Imagen 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img4.png" class="d-block w-100" alt="Imagen 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img5.jpg" class="d-block w-100" alt="Imagen 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img6.png" class="d-block w-100" alt="Imagen 6">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img7.png" class="d-block w-100" alt="Imagen 7">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img8.jpg" class="d-block w-100" alt="Imagen 8">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <div>
-                    <img src="../assets/img2.jpg" alt="Imagen 2">
-                </div>
-                <div>
-                    <img src="../assets/img3.png" alt="Imagen 3">
-                </div>
-            </div>
-            <div class="gallery2">
-                <div>
-                    <img src="../assets/img4.png" alt="Imagen 3">
-                </div>
-                <div>
-                    <img src="../assets/img5.jpg" alt="Imagen 3">
-                </div>
-                <div>
-                    <img src="../assets/img6.png" alt="Imagen 3">
-                </div>
-                <div>
-                    <img src="../assets/img7.png" alt="Imagen 3">
-                </div>
-                <div>
-                    <img src="../assets/img8.jpg" alt="Imagen 3">
-                </div>
-            </div>
+            </section>
         </section>
     </main>
     <aside>
-        <!--Para definir/declarar el contenido secundario/terciario del html...suelen ir los banners de publicidades..-->
     </aside>
     <footer>
-        <img src="../assets/logo.jpeg" alt="Logo de Fotos y Pinceles">
-        <div class="contact">
-
-            <a href="#">Whatsapp</a>
-            <a href="#">IG</a>
-            <a href="#">Facebook</a>
+        <div class="footer">
+            <img src="../assets/logo.png" alt="Logo de Fotos y Pinceles">
+            <div>
+                <a href="#">Whatsapp</a>
+                <a href="#">IG</a>
+                <a href="#">Facebook</a>
+            </div>
         </div>
     </footer>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
