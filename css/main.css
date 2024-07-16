@@ -1,0 +1,140 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(269, 67%, 77%);
+  text-align: center;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  background-color: hsl(269, 67%, 77%);
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3%;
+}
+
+.navbar-bg {
+  background-color: hsl(269, 67%, 77%);
+}
+
+.logo-dfyp {
+  width: 10em;
+}
+
+.footer {
+  background-color: hsl(269, 67%, 77%);
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 5px;
+}
+.footer img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer div a {
+    font-size: 0.875rem;
+    /* Tamaño de texto más pequeño en pantallas pequeñas */
+  }
+  .footer img {
+    width: 40px;
+    /* Tamaño de la imagen más pequeño en pantallas pequeñas */
+  }
+}
+.contact a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.banner {
+  background-color: #e9e9e9;
+  padding: unset;
+}
+.banner img {
+  width: -webkit-fill-available;
+}
+
+.parrafo-container {
+  margin-top: 2rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+}
+
+.iframe-container {
+  margin-top: 2rem;
+}
+
+.maps-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.maps-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form-nombre {
+  margin: 1%;
+}
+
+.iframe-video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+  border: 5px;
+}
+
+.video {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+.perfil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: row;
+}
+
+.texto-perfil, .imagen-perfil {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin: 10px;
+  text-align: center;
+}
+
+.imagen-perfil img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
