@@ -68,6 +68,7 @@ header {
 
 .form-container {
   margin-top: 2rem;
+  margin: 3rem;
 }
 
 .iframe-container {
@@ -86,10 +87,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.form-nombre {
-  margin: 1%;
 }
 
 .iframe-video-container {
